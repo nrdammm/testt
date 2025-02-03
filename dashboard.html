@@ -1,0 +1,127 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Social Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Additional CSS for social features */
+        /* ...        /* Additional CSS for social features */
+        .social-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .post-form {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+
+        .post-input {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            resize: vertical;
+        }
+
+        .post-button {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            float: right;
+        }
+
+        .post-feed {
+            margin-top: 20px;
+        }
+
+        .post-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+
+        .post-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .user-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+            object-fit: cover;
+        }
+
+        .post-image {
+            width: 100%;
+            border-radius: 8px;
+            margin-top: 15px;
+        }
+
+        .logout-button {
+            background: #dc3545;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        .avatar-upload {
+            margin-bottom: 10px;
+        }
+
+        .avatar-upload label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+    </style>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="social-container">
+       <button id="logoutButton" class="logout-button">Logout</button>
+
+        <!-- Avatar Upload Section -->
+        <div class="avatar-upload">
+            <label for="avatarUpload">Upload Profile Picture:</label>
+            <input type="file" id="avatarUpload" accept="image/*">
+            <button onclick="uploadAvatar()">Set Avatar</button>
+        </div>
+
+        <!-- Post Creation Section -->
+        <div class="post-form">
+            <h2>Create New Post</h2>
+            <textarea class="post-input" placeholder="What's on your mind?" rows="3"></textarea>
+            <input type="file" id="imageUpload" accept="image/*" style="margin-bottom: 10px;">
+            <button class="post-button" onclick="createPost()">Post</button>
+            <div style="clear: both;"></div>
+        </div>
+
+        <!-- Post Feed -->
+        <div class="post-feed" id="postFeed">
+            <!-- Posts will be loaded here -->
+        </div>
+    </div>
+</body>
+</html>

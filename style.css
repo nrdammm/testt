@@ -1,0 +1,236 @@
+/* style.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f0f2f5;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-page {
+    background-image: url('emily pic.jpeg'); /* Add your background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 400px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+h2 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #fff;
+    font-weight: 500;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #007bff;
+    outline: none;
+    background: rgba(255, 255, 255, 1);
+}
+
+button, input[type="submit"] {
+    width: 100%;
+    padding: 0.8rem;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover, input[type="submit"]:hover {
+    background: #0056b3;
+}
+
+.nav-links {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.nav-links a:hover {
+    color: #007bff;
+}
+
+.error-message {
+    color: #dc3545;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    background: rgba(248, 215, 218, 0.9);
+    border: 1px solid rgba(245, 198, 203, 0.9);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.success-message {
+    color: #155724;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    background: rgba(212, 237, 218, 0.9);
+    border: 1px solid rgba(195, 230, 203, 0.9);
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+
+/* General Container */
+.social-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Post Form */
+.post-form {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.post-input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    resize: vertical;
+}
+
+.post-button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+}
+
+/* Post Feed */
+.post-feed {
+    margin-top: 20px;
+}
+
+.post-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+/* Post Header */
+.post-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+/* Avatar */
+.user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+/* Post Image */
+.post-image {
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+/* Logout Button */
+.logout-button {
+    background: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+/* Avatar Upload */
+.avatar-upload {
+    margin-bottom: 10px;
+}
+
+.avatar-upload label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+
+.delete-button {
+    background: #dc3545; /* Red background */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
